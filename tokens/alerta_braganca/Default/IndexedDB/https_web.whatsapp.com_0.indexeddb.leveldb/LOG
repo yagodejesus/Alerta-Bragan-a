@@ -1,0 +1,6 @@
+2026/03/01-01:54:28.632 9e4 Reusing MANIFEST c:\Users\Yago\Desktop\Alerta Bragança\tokens\alerta_braganca\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/03/01-01:54:28.632 9e4 Recovering log #30
+2026/03/01-01:54:28.653 9e4 Reusing old log c:\Users\Yago\Desktop\Alerta Bragança\tokens\alerta_braganca\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000030.log 
+2026/03/01-01:57:23.872 72ec Level-0 table #35: started
+2026/03/01-01:57:23.916 72ec Level-0 table #35: 1301993 bytes OK
+2026/03/01-01:57:23.921 72ec Delete type=0 #30

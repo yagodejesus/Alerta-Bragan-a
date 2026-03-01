@@ -1,0 +1,12 @@
+2026/02/28-23:38:28.765 50cc Reusing MANIFEST c:\Users\Yago\Desktop\Alerta Bragança\tokens\defesa_civil_braganca\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/28-23:38:28.767 50cc Recovering log #27
+2026/02/28-23:38:28.832 50cc Reusing old log c:\Users\Yago\Desktop\Alerta Bragança\tokens\defesa_civil_braganca\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000027.log 
+2026/02/28-23:38:31.473 3930 Level-0 table #32: started
+2026/02/28-23:38:31.522 3930 Level-0 table #32: 1081865 bytes OK
+2026/02/28-23:38:31.527 3930 Delete type=0 #27
+2026/02/28-23:38:31.535 3930 Compacting 1@1 + 1@2 files
+2026/02/28-23:38:31.611 3930 Generated table #33@1: 28456 keys, 1200484 bytes
+2026/02/28-23:38:31.611 3930 Compacted 1@1 + 1@2 files => 1200484 bytes
+2026/02/28-23:38:31.614 3930 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/28-23:38:31.615 3930 Delete type=2 #29
+2026/02/28-23:38:31.615 3930 Delete type=2 #32

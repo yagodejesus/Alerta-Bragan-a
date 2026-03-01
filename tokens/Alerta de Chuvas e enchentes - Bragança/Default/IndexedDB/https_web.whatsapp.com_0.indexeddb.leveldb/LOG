@@ -1,0 +1,12 @@
+2026/02/28-23:45:10.507 6014 Reusing MANIFEST c:\Users\Yago\Desktop\Alerta Bragança\tokens\Alerta de Chuvas e enchentes - Bragança\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/28-23:45:10.508 6014 Recovering log #6
+2026/02/28-23:45:10.570 6014 Reusing old log c:\Users\Yago\Desktop\Alerta Bragança\tokens\Alerta de Chuvas e enchentes - Bragança\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000006.log 
+2026/02/28-23:45:14.836 2850 Level-0 table #11: started
+2026/02/28-23:45:14.880 2850 Level-0 table #11: 1048643 bytes OK
+2026/02/28-23:45:14.886 2850 Delete type=0 #6
+2026/02/28-23:45:14.925 e40 Compacting 1@1 + 1@2 files
+2026/02/28-23:45:14.989 e40 Generated table #12@1: 30698 keys, 1257907 bytes
+2026/02/28-23:45:14.991 e40 Compacted 1@1 + 1@2 files => 1257907 bytes
+2026/02/28-23:45:14.995 e40 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/28-23:45:14.996 e40 Delete type=2 #8
+2026/02/28-23:45:14.996 e40 Delete type=2 #11

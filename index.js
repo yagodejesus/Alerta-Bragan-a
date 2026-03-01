@@ -58,8 +58,6 @@ const MARES_MARCO = `
 // ==========================================
 wppconnect.create({
   session: 'alerta_braganca',
-  headless: true,
-  autoClose: 0,
   puppeteerOptions: {
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   }

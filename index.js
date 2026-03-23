@@ -1,8 +1,25 @@
 const wppconnect = require('@wppconnect-team/wppconnect');
 const axios = require('axios');
 const fs = require('fs');
+const express = require('express');
 
+const app = express();
 let client;
+
+// ================= SERVER QR =================
+app.get('/qr', (req, res) => {
+  if (fs.existsSync('./qr.png')) {
+    return res.sendFile(__dirname + '/qr.png');
+  } else {
+    return res.send('QR ainda não gerado. Aguarde ou reinicie o serviço.');
+  }
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`🌐 Servidor rodando na porta ${PORT}`);
+  console.log(`👉 Acesse: /qr para ver o QR Code`);
+});
 
 // ================= BAIRROS =================
 const BAIRROS = [
@@ -38,19 +55,20 @@ const MARES_MARCO = `
 // ==========================================
 wppconnect.create({
   session: 'alerta_braganca',
-
-  autoClose: 0, // 🔥 evita erro que você teve
+  autoClose: 0,
 
   catchQR: (base64Qr, asciiQR) => {
-    console.log('📲 Escaneie o QR Code abaixo:\n');
-    console.log(asciiQR);
+    console.log('📲 QR gerado!');
 
-    // opcional: salvar QR como imagem
+    // salvar imagem
     const matches = base64Qr.match(/^data:([A-Za-z-+/]+);base64,(.+)$/);
     if (matches && matches.length === 3) {
       const buffer = Buffer.from(matches[2], 'base64');
       fs.writeFileSync('qr.png', buffer);
+      console.log('✅ QR salvo em qr.png');
     }
+
+    console.log('👉 Acesse /qr no navegador para escanear');
   },
 
   statusFind: (statusSession) => {
@@ -70,7 +88,7 @@ wppconnect.create({
 });
 
 // ==========================================
-// DELAY SEGURO (ANTI BAN)
+// DELAY SEGURO
 // ==========================================
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -99,7 +117,7 @@ function iniciarEscuta() {
 }
 
 // ==========================================
-// CONSULTAR CHUVA (Open-Meteo)
+// CONSULTAR CHUVA
 // ==========================================
 async function consultarChuva(lat, lon) {
 
